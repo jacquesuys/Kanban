@@ -66,6 +66,13 @@
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
       overflow: hidden;
     }
+    .column.done .job {
+      opacity: 0.75;
+      transition: all 0.5s;
+    }
+    .column.done .job:hover {
+      opacity: 1;
+    }
     .job:hover {
       cursor: move;
     }
@@ -78,6 +85,12 @@
       height: 20px;
       background: rgba(0, 0, 0, 0.1);
       padding: 5px;
+    }
+    .column.ready .top {
+      background: rgba(255, 255, 0, 0.5);
+    }
+    .column.progress .top {
+      background: rgba(0, 255, 0, 0.5);
     }
     .close {
       background: red;
@@ -100,7 +113,7 @@
 <body>
     <div id="board">
 
-      <div class="column">
+      <div class="column backlog">
         <heading>Back Log</heading>
         <div class="job">
           <div class="top">
@@ -128,7 +141,7 @@
         </div>
       </div><!-- column -->
 
-      <div class="column">
+      <div class="column ready">
         <heading>Ready</heading>
         <div class="job">
           <div class="top">
@@ -156,7 +169,7 @@
         </div>
       </div><!-- column -->
 
-      <div class="column">
+      <div class="column progress">
         <heading>In Progress</heading>
         <div class="job">
           <div class="top">
@@ -174,7 +187,7 @@
           <hr/>
           <time>2008-02-14 20:00</time>
         </div>
-        <div class="job">
+        <div class="job done">
           <div class="top">
             <a href="#" class="close"></a>
           </div>
@@ -184,7 +197,7 @@
         </div>
       </div><!-- column -->
 
-      <div class="column">
+      <div class="column done">
         <heading>Done</heading>
         <div class="job">
           <div class="top">
