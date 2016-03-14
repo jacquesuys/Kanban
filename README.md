@@ -1,5 +1,5 @@
 # Kanban
 
-A light-weight Kanban board.
+A lightweight Kanban board, using CSS and HTML.
 
 ![Alt text](ScreenShot.png?raw=true "Screen Shot")
